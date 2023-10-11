@@ -1,0 +1,27 @@
+.form-row{
+    width: 100%;
+    margin-bottom: 26px;
+}
+
+.form-row:last-child{
+    margin-bottom: 0px;
+}
+
+.contact-form--container {
+    width: 100%;
+    max-width: 980px;
+    border: 1px solid rgb(0, 0, 0, 0.7);
+    padding: 26px 12px;
+}
+
+.site-input--wrapper {
+    width: 100%;
+    display: block;
+}
+
+.site-input--wrapper input[type="text"] {
+    width: 100%;
+    padding: 10px 12px;
+    outline: none;
+    border: 1px solid tomato;
+}

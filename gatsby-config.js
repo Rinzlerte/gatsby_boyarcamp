@@ -4,11 +4,11 @@
 module.exports = {
   siteMetadata: {
     title: `gatsby-boyarcamp`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
   "gatsby-plugin-sass", 
-  "gatsby-plugin-google-gtag", 
+  // "gatsby-plugin-google-gtag", 
   "gatsby-plugin-image", 
   "gatsby-plugin-sitemap",
    {
@@ -16,7 +16,9 @@ module.exports = {
     options: {
       "icon": "src/images/icon.png"
     }
-  }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", 
+  },
+   "gatsby-plugin-sharp", 
+  "gatsby-transformer-sharp", 
   {
     resolve: 'gatsby-source-filesystem',
     options: {
