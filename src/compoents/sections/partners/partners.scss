@@ -3,16 +3,17 @@
 }
 .partners-wrapper {
     padding-top: 0px;
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -10px;
+    margin-right: -10px;
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
+    justify-content: center;
 }
 
 .partner-card{
     width: calc(100%/ 3);
-    padding: 12px;
+    padding: 10px;
 }
 
 .partner-card--inner{

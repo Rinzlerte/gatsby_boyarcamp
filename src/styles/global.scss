@@ -5,10 +5,10 @@
 }
 
 :root {
-  --core-white-color:#fff;
+  --core-white-color: #fff;
   --core-blue-color: #d9ecfc;
   --core-black-color: #080738;
-  --core-grey-color:  #f9f9f9;
+  --core-grey-color: #f9f9f9;
   --core-maintext-color: #333647;
   --core-secondaryfont-color: #333;
   --div-shadow: box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -30,10 +30,14 @@ body {
     overflow-y: scroll;
 }
 
+a {
+    color: inherit;
+}
 
 main {
     padding-top: 110px;
 }
+
 picture, img {
     max-width: 100%;
     display: block;
@@ -73,6 +77,8 @@ section {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding-left: 0;
+            padding-right: 0;
         }
     }
 }
@@ -108,6 +114,10 @@ section {
 .head-line{
    background-color: var(--core-white-color);
    height: 30px;
+   .site-container {
+    padding-left: 0;
+    padding-right: 0;
+   }
 }
 
 
@@ -121,7 +131,7 @@ section {
     margin: 0 auto;
     width: 100%;
     max-width: 1200px;
-    padding-inline: 12px;
+    padding-inline: 10px;
 }
 
 .white-bg{
@@ -355,18 +365,24 @@ a {
     .services-wrapper--card{
         width: calc(100% / 1);
     }
-    section{
-        padding-left: 0;
-        padding-right: 0;
-    }
 }   
+
+@media only screen and (max-width: 600px){
+    section{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .camp-card {
+        max-width: 390px;
+    }
+}
 
 
 
 .swiper {
     width: 100%;
     height: 100%;
-  }
+}
   
 
 //   MENU BTN
@@ -396,6 +412,7 @@ a {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        background-color: var(--core-grey-color);
         width: 100%;
         height: 100%;
         div {
@@ -409,13 +426,17 @@ a {
     }
 
     .menu-btn--inner:hover{
-        background-color: var(--core-grey-color);
         border-radius: 5px;
     }
     .menu-btn--inner:hover div:nth-child(2){
         width: 30%;
     }
-       
+    .menu-btn--inner:hover div:nth-child(1){
+        width: 70%;
+    }
+    .menu-btn--inner:hover div:nth-child(3){
+        width: 70%;
+    }
 }
 
 .backdrop {
@@ -450,9 +471,7 @@ a {
             }
         }
     }
-    a {
-        color: inherit;
-    }
+    
 }
 
 .green-bg{
@@ -461,9 +480,9 @@ a {
 
 .brandname {
     h1 {
-        color: var(--core-black-color);
-        text-transform: uppercase;
-        font-weight: 400;
+    color: var(--core-black-color);
+    text-transform: uppercase;
+    font-weight: 400;
         span {
             font-weight: 800;
         }
@@ -501,3 +520,41 @@ ul.laptop-nav {
     }
 }
 
+@media screen and (max-width: 992px) {
+    .desctop-only {
+        display: none !important;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .menu-btn-wrapper span {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .tablet-only {
+        display: none !important;
+    }
+    .site-header{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.fluid-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.camp-card--cover {
+    overflow: hidden;
+}

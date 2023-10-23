@@ -5,13 +5,13 @@
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
 .gallery-card {
     width: calc(100% / 3);
-    padding: 12px;
+    padding: 10px;
 }
 
 .gallery-card--inner {

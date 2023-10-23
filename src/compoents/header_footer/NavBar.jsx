@@ -18,23 +18,23 @@ const NavBar = ({menulist, open, menutoggler }) => {
        <div className='menu-side'>
 
        <ul className='laptop-nav'>
-        <li>
-          <Link to="/#about">
+        <li className='desctop-only'>
+          <Link to="/#about" >
           ПРО НАС
           </Link>
         </li>
-        <li>
-          <Link to="/#camps">
+        <li className='desctop-only'>
+          <Link to="/#camps" >
           ТАБОРИ
           </Link>
         </li>
-        <li>
-          <Link to="/#gallery">
+        <li className='desctop-only'>
+          <Link to="/#gallery" >
           Галерея
           </Link>
         </li>
-        <li>
-          <Link to="/#bording">
+        <li className='tablet-only'>
+          <Link to="/#bording" >
           Бронювання
           </Link>
         </li>
