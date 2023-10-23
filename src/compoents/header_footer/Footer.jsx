@@ -1,23 +1,30 @@
 import React from 'react'
 import Container from '../sections/elements/Container'
 
-const Footer = ({nav}) =>  (
-    <footer className='site-footer'>
+const Footer = ({nav}) =>  {
 
+//
 
-
-
-
+return  (
+        <>
+       
+        <footer className='site-footer' 
+        
+        >
             <Container>
-
+                <div className='footer-top'>
+                    <h4>BOYAR CAMP</h4>
+                </div>
             </Container>
             <Container>
-                <h4>BOYAR CAMP</h4>
-                <h3> ТОВ "Смарт Простір Бояр"</h3>
-                <p>©2013-2023</p>
+                <div className='footer-bottom '>
+                    <p>ТОВ "Смарт Простір Бояр" ©2013-2023</p>
+                </div>
             </Container>
-    </footer>
-)
+        </footer>
+        </>
+    )
+}
 
 
 export default Footer

@@ -9,9 +9,17 @@
 
 .contact-form--container {
     width: 100%;
-    max-width: 980px;
-    border: 1px solid rgb(0, 0, 0, 0.7);
-    padding: 26px 12px;
+    max-width: 860px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 38px 26px;
+    border-radius: 1rem;
+}
+
+.contact-form--container legend {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
 }
 
 .site-input--wrapper {
@@ -21,7 +29,12 @@
 
 .site-input--wrapper input[type="text"] {
     width: 100%;
-    padding: 10px 12px;
+    padding: 14px 14px ;
     outline: none;
-    border: 1px solid tomato;
+    border: 0.8px solid rgb(0, 0, 0, 0.7);
+    font-size: 17px;
+}
+
+.site-input--wrapper input[type="text"]::placeholder{
+    color: gray;
 }

@@ -3,42 +3,60 @@ import Section from '../elements/Section'
 import Container from '../elements/Container'
 import Camp from './ui/CampCard'
 import Separator from '../../ui/separator/Separator'
+import SectionTitle from '../elements/SectionTitle'
+
+import './camps.scss'
 
 const Camps = () => {
 
 const camps = [
     {
-        title: '1',
-        desc: 'omg',
+        title:'BoyarCamp Осінь 2023',
+        desc: "Карпати, Яремче 21/10-28/10",
+        path: "/testcamp",
         owned: false
     },
     {
-        title: '2',
-        desc: 'omg',
+        title:'BoyarCamp Осінь 2023',
+        desc: "Карпати, Яремче 21/10-28/10",
+        path: "/testcamp",
         owned: false
     },
     {
-        title: '3',
-        desc: 'omg',
+        title:'BoyarCamp Осінь 2023',
+        desc: "Карпати, Яремче 21/10-28/10",
+        path: "/testcamp",
         owned: true
     },
     {
-        title: '4',
-        desc: 'omg',
+        title:'BoyarCamp Осінь 2023',
+        desc: "Карпати, Яремче 21/10-28/10",
+        path: "/testcamp",
         owned: false
     },  {
-        title: '5',
-        desc: 'omg',
+        title:'BoyarCamp Осінь 2023',
+        desc: "Карпати, Яремче 21/10-28/10",
+        path: "/testcamp",
         owned: true
     },  {
-        title: '6',
-        desc: 'omg',
+        title:'BoyarCamp Осінь 2023',
+        desc: "Карпати, Яремче 21/10-28/10",
+        path: "/testcamp",
         owned: true
     }
 ]
   return (
-    <Section id="contact">
+    <Section id="camps">
         <Container>
+            <SectionTitle 
+                title="Наші табори" 
+                description={"Adnventures and"} 
+                descriptionAdd={" Learning"}
+            />
+            <h3 className='heading'>
+            Осінь 2023
+            </h3>
+            <div className='camps-wrapper'>
             {
                 camps.filter((camp)=> camp.owned !== true).map((camp, index)=>{
                     return (
@@ -46,14 +64,20 @@ const camps = [
                     )
                 })
             }
+            </div>
+            <br/>
             <Separator/>
+            <br/>
+            <h3 className='heading'> Минулі табори 2013-2023 </h3>
+            <div className='camps-wrapper'>
             {
-                camps.filter((camp)=> camp.owned == true).map((camp, index)=>{
+                camps.filter((camp)=> camp.owned === true).map((camp, index)=>{
                     return (
                         <Camp key={index} item={camp} />
                     )
                 })
             }
+            </div>
         </Container>
     </Section>
   )

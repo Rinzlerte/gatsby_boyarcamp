@@ -1,0 +1,48 @@
+#hero {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.hero-row {
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+
+.hero-column-left {
+    max-width: 800px;
+    width: 100%;
+    /* background-image: url(https://uploads-ssl.webflow.com/5d121ce…/5d1c318…_frame.png); */
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: red;
+    // border: 4px solid var(--core-white-color);
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 4rem;
+    display: flex;
+}
+
+.hero-title {
+    color: var(--core-white-color);
+    letter-spacing: 3px;
+    margin-top: 0;
+    margin-bottom: 24px;
+    padding-left: 7px;
+    padding-right: 10px;
+    font-size: 60px;
+    line-height: 70px;
+    position: relative;
+}
+
+
+.hero-paragraph-holder {
+    width: 100%;
+    margin-bottom: 32px;
+    position: relative;
+    overflow: hidden;
+    color: var(--core-white-color);
+}

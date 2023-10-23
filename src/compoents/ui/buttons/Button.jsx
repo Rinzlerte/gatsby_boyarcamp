@@ -10,7 +10,7 @@ const Button = (props) => {
     )
 
     return (
-        <button type='button' className='site-btn' {...props}>{props.children}</button>
+        <button type='button' className="site-btn" {...props}>{props.children}</button>
     )
 }
 

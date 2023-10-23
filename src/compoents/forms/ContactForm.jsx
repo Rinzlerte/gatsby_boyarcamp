@@ -34,8 +34,8 @@ const ContactForm = ({legendTitle, submitTxt}) => {
       <form className='contact-form' onSubmit={handleSubmit} method="POST">
         
         <legend>
-            <span>Бронюйте незабутні</span>
-            <span>враження для дитини</span>
+            Бронюйте незабутні
+          враження для дитини
         </legend>
 
         <div className='form-row'>
@@ -59,7 +59,7 @@ const ContactForm = ({legendTitle, submitTxt}) => {
      />
         </div>
         <div className='form-row'>
-          <Button type='submit'>{submitTxt || 'submit'}</Button>
+          <Button type='submit'>{submitTxt || 'забронювати'}</Button>
         </div>
       </form>
     </div>
